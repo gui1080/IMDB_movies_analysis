@@ -28,7 +28,7 @@ def main():
     duration_median = movie_data['duration'].median()
     print(duration_median) # = 103.0
 
-    movie_data = movie_data.fillna({"duration":duration_median})
+    movie_data = movie_data.fillna({"duration":duration_median}) # there it is! :)
 
     # -----------------------------------------------
     # 1.4
@@ -113,7 +113,7 @@ def main():
     print(years)
     summary_dataframe = pd.DataFrame(categories_count, index=years, columns=["1. <90", "2. 90–120", "3. >120"])
 
-    print(summary_dataframe)
+    print(summary_dataframe) # there it is! :)
 
     # -----------------------------------------------
     # 1.7
@@ -145,7 +145,7 @@ def main():
 
     movie_data["movie_plot_category"] = plot_type
 
-    print(movie_data)
+    print(movie_data) # there it is! :)
 
     # -----------------------------------------------
     # 1.9
@@ -198,7 +198,7 @@ def main():
     '''
 
     summary_dataframe2 = pd.DataFrame([avg_love_death, avg_death, avg_love, avg_others], index=["love_and_death", "death", "love", "other"], columns=["average_imdb_score"])
-    print(summary_dataframe2)
+    print(summary_dataframe2) # there it is! :)
 
     # -----------------------------------------------
     # 1.10
